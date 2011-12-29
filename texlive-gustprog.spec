@@ -16,8 +16,6 @@ Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/gustprog.doc.tar.
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
 
 %description
 TeXLive gustprog package.
@@ -30,7 +28,6 @@ TeXLive gustprog package.
 %doc %{_texmfdistdir}/doc/support/gustprog/plmindex.zip
 %doc %{_texmfdistdir}/doc/support/gustprog/porzadki.pl
 %doc %{_texmfdistdir}/doc/support/gustprog/slim.zip
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -41,5 +38,3 @@ TeXLive gustprog package.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
