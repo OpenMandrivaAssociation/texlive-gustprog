@@ -5,7 +5,7 @@
 # catalog-license undef
 # catalog-version undef
 Name:		texlive-gustprog
-Version:	20171108
+Version:	20180303
 Release:	1
 Summary:	TeXLive gustprog package
 Group:		Publishing
